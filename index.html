@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Web Studios</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin-top: 20px;
+        }
+
+        .paddingclass {
+            padding: 0px 70px;
+        }
+
+        .hrader {
+            box-sizing: border-box;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .header img {
+            width: 20%;
+            float: left;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .header nav {
+            display: inline-block;
+            width: 35vw;
+            margin: 0px 12vw;
+            margin-top: 40px;
+        }
+
+        .header nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .header nav ul li {
+            display: inline-block;
+            text-align: center;
+            margin: 0px 2%;
+            padding: 5px;
+            cursor: pointer;
+
+        }
+
+        .header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header nav ul li a:hover {
+            color: orangered;
+        }
+
+        .header span {
+            width: 12%;
+            text-align: center;
+            color: orangered;
+            border: 1px solid orangered;
+            border-radius: 50px;
+            padding: 12px 0px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 1.2vw;
+            float: right;
+        }
+
+        .header span:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+        .container1 {
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+            margin-top: 70px;
+            overflow: auto;
+        }
+
+        .container1>span {
+            display: inline-block;
+            height: 100%;
+            box-sizing: border-box;
+            width: 35%;
+
+
+        }
+
+        .container1 span:nth-child(1) {
+            float: left;
+            height: 100%;
+            margin-top: 50px;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .container1 span:nth-child(1) div:nth-child(1) {
+            font-size: 80px;
+            font-weight: 900;
+            position: relative;
+        }
+
+        .container1 span:nth-child(1) div:nth-child(1) span {
+            border-bottom: 17px solid rgb(247, 159, 127);
+            height: 10px;
+            width: 198px;
+            z-index: -5;
+            position: absolute;
+            top: -22px;
+            left: 25px;
+        }
+
+        .container1 span:nth-child(1) div:nth-child(2) {
+            font-size: 32px;
+            font-weight: 500;
+            color: rgb(104, 101, 101);
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+
+        .container1 span:nth-child(1) div:nth-child(3) {
+            margin-top: 50px;
+            background-color: orangered;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            width: fit-content;
+            padding: 25px 50px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 1px solid orangered;
+        }
+
+        .container1 span:nth-child(1) div:nth-child(3):hover {
+            color: orangered;
+            background-color: white;
+
+        }
+
+        .container1 span:nth-child(1) div:nth-child(3) svg {
+            position: relative;
+            top: 5px;
+        }
+
+        .container1 span:nth-child(2) {
+            float: right;
+            height: 100%;
+            width: fit-content;
+        }
+
+        .container2 {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 80px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .container2 img {
+            margin: 0px 15px;
+            width: 15vw;
+        }
+
+        .container3 {
+            box-sizing: border-box;
+            height: fit-content;
+            width: 100%;
+            background-color: rgb(253, 235, 229);
+            padding-top: 150px;
+            padding-bottom: 150px;
+            overflow: auto;
+
+        }
+
+        .container3>span {
+            box-sizing: border-box;
+            width: 50%;
+            height: 100%;
+        }
+
+        .container3>span:nth-child(1) {
+            float: left;
+        }
+
+        .container3>span:nth-child(1) div {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(1) {
+            color: orangered;
+            font-size: 1.4vw;
+            letter-spacing: 1px;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(2) {
+            font-size: 3vw;
+            font-weight: 900;
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+
+        }
+
+        .container3>span:nth-child(1) div:nth-child(2) span {
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 250px;
+            z-index: -1;
+            position: absolute;
+            top: 41px;
+            left: 1px;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(3) {
+            font-size: 1.4vw;
+            letter-spacing: 1px;
+            color: rgb(104, 101, 101);
+            margin-top: 22px;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(4) {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(4) img {
+            margin: 0px 3%;
+            height: 6vw;
+        }
+
+        .container3>span:nth-child(1) div:nth-child(4) img:nth-child(2) {
+            margin: 0px 5%;
+            height: 7vw;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) {
+            height: fit-content;
+            margin-top: 70px;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span {
+            display: inline-block;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(1) {
+            display: inline-block;
+            background-color: white;
+            color: orangered;
+            font-size: 21px;
+            font-weight: 500;
+            width: fit-content;
+            padding: 22px 40px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 1px solid orangered;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-right: 25px;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(1):hover {
+            color: white;
+            background-color: orangered;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(1) svg {
+            position: relative;
+            top: 5px;
+            left: -4px;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(2) {
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: rgb(104, 101, 101);
+            cursor: pointer;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(2) svg {
+            display: inline-block;
+            border: 1px solid orangered;
+            border-radius: 50%;
+            padding: 15px;
+            position: relative;
+            top: 26px;
+            color: orangered;
+            background-color: orangered;
+            padding-left: 18px;
+        }
+
+        .container3 span:nth-child(1) div:nth-child(5) span:nth-child(2) svg:hover {
+            border: 1px solid orangered;
+            background-color: white;
+        }
+
+        .container3>span:nth-child(2) {
+            float: right;
+        }
+
+        .container3>span:nth-child(2) span {
+            width: 42%;
+            box-sizing: border-box;
+        }
+
+        .container3>span:nth-child(2) span:nth-child(1) {
+            float: left;
+            margin-left: 40px;
+
+        }
+
+        .container3>span:nth-child(2) span>div {
+            height: 400px;
+            width: 100%;
+            border-radius: 15px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        .container3>span:nth-child(2) span>div div {
+            padding: 10px 45px;
+            letter-spacing: 1px;
+        }
+
+        .container3>span:nth-child(2) span>div div:nth-child(1) {
+            color: orangered;
+            font-size: 1.3vw;
+            letter-spacing: 1px;
+            padding-top: 60px;
+        }
+
+        .container3>span:nth-child(2) span>div div:nth-child(2) {
+            font-size: 3.5vw;
+            font-weight: 1000;
+
+        }
+
+        .container3>span:nth-child(2) span>div div:nth-child(3) {
+            font-size: 1.4vw;
+            color: rgb(104, 101, 101);
+        }
+
+        .container3>span:nth-child(2) span:nth-child(2) {
+            float: right;
+            margin-top: 120px;
+        }
+
+        .container4 {
+            margin-top: 150px;
+        }
+
+        .container4>div:nth-child(1) {
+            font-size: 50px;
+            font-weight: 1000;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 120px;
+        }
+
+        .container4>div:nth-child(1)>span {
+            position: relative;
+        }
+
+        .container4>div:nth-child(1) span:nth-child(1)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 64px;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+        }
+
+        .container4>div:nth-child(1) span:nth-child(2)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 94px;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+        }
+
+        .container4>div:nth-child(2) {
+            width: 99%;
+            margin: auto;
+            margin-bottom: 70px;
+        }
+
+        .container4>div:nth-child(2)>div {
+            display: inline-block;
+            box-sizing: border-box;
+            height: fit-content;
+            width: 30%;
+            padding: 10px 32px;
+            background-color: rgba(232, 232, 233, 0.459);
+            box-shadow: 5px 5px 10px 7px rgba(232, 232, 233), -5px 10px 7px rgba(232, 232, 233);
+            border-radius: 20px;
+            margin: 0px 25px 100px;
+
+        }
+
+        .container4>div:nth-child(2)>div>div:nth-child(2) {
+            width: 99%;
+            height: 400px;
+            display: inline-block;
+        }
+
+        .container4>div:nth-child(2)>div>div:nth-child(1) {
+            position: relative;
+            top: -45px;
+            left: 10px;
+        }
+
+        .container4>div:nth-child(2)>div>div:nth-child(1)>img {
+            background-color: white;
+            border-radius: 12px;
+            padding: 10px;
+            z-index: 10;
+            height: 80px;
+            width: 80px;
+        }
+
+        .container4>div:nth-child(2)>div>div>div {
+            display: inline-block;
+            width: 90%;
+        }
+
+        .container4>div:nth-child(2)>div>div>div:nth-child(1) {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 35px;
+            font-weight: 800;
+            height: 100px;
+        }
+
+        .container4>div:nth-child(2)>div>div>div:nth-child(2) {
+            font-size: 25px;
+            line-height: 35px;
+            color: rgb(104, 101, 101);
+            display: inline-block;
+            height: 200px;
+        }
+
+        .container4>div:nth-child(2)>div>div>div:nth-child(3) {
+            font-size: 22px;
+            margin-top: 5px;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .container4>div:nth-child(2)>div>div>div:nth-child(3):hover {
+            color: rgb(104, 101, 101);
+        }
+
+        .container4>div:nth-child(2)>div>div>div:nth-child(3) svg {
+            position: relative;
+            top: 5px;
+        }
+
+        .container5 {
+            padding: 10px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        .container5>div {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .container5 span:nth-child(1) {
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .container5 span:nth-child(1)>span {
+            position: relative;
+        }
+
+        .container5 span:nth-child(1)>span>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 100%;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+        }
+
+        .container5 span:nth-child(2) {
+            background-color: orangered;
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            width: fit-content;
+            padding: 25px 50px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 1px solid orangered;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .container5 span:nth-child(2):hover {
+            color: orangered;
+            background-color: white;
+
+        }
+
+        .container5 span:nth-child(2) svg {
+            position: relative;
+            top: 5px;
+        }
+
+        .container6 {
+            box-sizing: border-box;
+            height: fit-content;
+            width: 100%;
+            background-color: rgb(253, 235, 229);
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: auto;
+        }
+
+        .container6>div:nth-child(1) {
+            width: 99%;
+            height: 100%;
+            overflow: auto;
+            margin-bottom: 100px;
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(1) {
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(1)>span {
+            position: relative;
+            z-index: 5;
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(1)>span>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 100%;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(2) {
+            float: right;
+            font-size: 25px;
+            letter-spacing: 1px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(2):hover {
+            color: rgb(104, 101, 101);
+        }
+
+        .container6>div:nth-child(1)>span:nth-child(2) svg {
+            position: relative;
+            top: 3px;
+        }
+
+        .container6>div:nth-child(2) {
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .container6>div:nth-child(2)>span {
+            display: inline-block;
+            width: 32%;
+            height: 500px;
+            border-radius: 25px;
+            overflow: hidden;
+            background-color: white;
+            padding-bottom: 60px;
+        }
+
+        .container6>div:nth-child(2)>span>div:nth-child(1) {
+            margin: 5px;
+        }
+
+        .container6>div:nth-child(2)>span>div:nth-child(1)>img {
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .container6>div:nth-child(2)>span>div:nth-child(2) {
+            width: 100%;
+            margin-top: 35px;
+            margin-bottom: 25px;
+            color: rgb(104, 101, 101);
+            font-size: 25px;
+            padding-left: 25px;
+            letter-spacing: 1px;
+        }
+
+        .container6>div:nth-child(2)>span>div:nth-child(3) {
+            width: 100%;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding-left: 25px;
+        }
+
+        .container7 {
+            margin-top: 180px;
+        }
+
+        .container7 div {
+            width: fit-content;
+            margin: auto;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .container7>div>span {
+            position: relative;
+        }
+
+        .container7>div>span>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 100%;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+        }
+
+        .container8 {
+            margin-top: 100px;
+        }
+
+        .container8>div {
+            width: 75%;
+            height: fit-content;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        .container8>div>div:nth-child(1) {
+            width: 100%;
+            border-bottom: 2px solid grey;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container8>div>div:nth-child(1)>span {
+            border-bottom: 2px solid transparent;
+            padding: 10px 15px;
+            font-size: 25px;
+            margin: 0px 10px;
+            position: relative;
+            bottom: -2px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .container8>div>div:nth-child(1)>span:hover {
+            color: orangered;
+            border-bottom: 2px solid orangered;
+        }
+
+        .container8>div>div:nth-child(1)>span:nth-child(1) {
+            color: orangered;
+            border-bottom: 2px solid orangered;
+        }
+
+        .container8>div>div:nth-child(2) {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .container8>div>div:nth-child(2)>span {
+            height: 180px;
+            display: inline-block;
+            width: 180px;
+            margin: 20px 20px;
+            background-color: rgba(238, 230, 221, 0.336);
+            border-radius: 20px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .container8>div>div:nth-child(2)>span>div>img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .container8>div>div:nth-child(2)>span>div:nth-child(2) {
+            font-size: 22px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        .container9 {
+            height: fit-content;
+            margin-top: 100px;
+            background-color: rgba(235, 224, 221, 0.315);
+            padding: 40px 0px 150px 0px;
+        }
+
+        .container9>div:nth-child(1) {
+            margin-top: 180px;
+            font-size: 25px;
+            text-align: center;
+            color: orangered;
+            letter-spacing: 1px;
+        }
+
+        .container9>div:nth-child(2) {
+            text-align: center;
+            font-size: 55px;
+            font-weight: 900;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+
+        .container9>div:nth-child(2)>span {
+            position: relative;
+            z-index: 5;
+        }
+
+        .container9>div:nth-child(2)>span:nth-child(1)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 100%;
+            z-index: -2;
+            position: absolute;
+            top: 40px;
+        }
+
+        .container9>div:nth-child(2)>span:nth-child(2)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 90%;
+            z-index: -2;
+            position: absolute;
+            top: 40px;
+            left: 18px;
+        }
+
+        .container9>div:nth-child(3) {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            width: 60%;
+            margin: auto;
+            margin-top: 80px;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+
+        .container9>div:nth-child(4) {
+            text-align: center;
+            width: 55%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 26px;
+            color: rgb(104, 101, 101);
+            line-height: 40px;
+        }
+
+        .container9>div:nth-child(5) {
+            width: fit-content;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .container9>div:nth-child(5)>div>span {
+            display: block;
+        }
+
+        .container9>div:nth-child(5)>div>span:nth-child(1) {
+            position: relative;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .container9>div:nth-child(5)>div>span>img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+
+        }
+
+        .container9>div:nth-child(5)>div>span>svg {
+            position: absolute;
+            right: 12px;
+            top: 0px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 12px;
+        }
+
+        .container9>div:nth-child(5)>div>span:nth-child(2) {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .container9>div:nth-child(5)>div>span:nth-child(3) {
+            font-size: 22px;
+            color: rgb(104, 101, 101);
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .container9>div:nth-child(6)>div {
+            width: 100px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .container9>div:nth-child(6)>div>span {
+            color: orangered;
+        }
+
+        .container10 {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .container10>div:nth-child(1) {
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        .container10>div:nth-child(1)>span {
+            position: relative;
+            z-index: 5;
+        }
+
+        .container10>div:nth-child(1)>span:nth-child(1)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 98%;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+        }
+
+        .container10>div:nth-child(1)>span:nth-child(2)>span {
+            display: inline-block;
+            border-bottom: 13px solid rgb(247, 159, 127);
+            width: 93%;
+            z-index: -2;
+            position: absolute;
+            top: 35px;
+            left: 15px;
+        }
+
+        .container10>div:nth-child(2) {
+            font-size: 25px;
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            color: rgb(104, 101, 101);
+            letter-spacing: 1px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+
+
+
+        footer {
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.575);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header paddingclass">
+            <a href="/appweb"><img src="image/logo2.png" alt="appweb"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <span>Request Quote</span>
+        </div>
+    </header>
+    <section>
+        <div class="container1 paddingclass">
+            <span>
+                <div><span></span> Award winning App development Company</div>
+                <div>We solve the world's biggest problems with Expertise We helps global brand with digital products on web, mobile and connected platforms</div>
+                <div>Let's Talk
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="2" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </span>
+            <span>
+                <img src="image/slider-banner.png" alt="img">
+            </span>
+        </div>
+
+        <div class="container2 paddingclass ">
+            <img src="image/client1.png" alt="img">
+            <img src="image/client2.png" alt="img">
+            <img src="image/client3.png" alt="img">
+            <img src="image/client4.png" alt="img">
+            <img src="image/client5.png" alt="img">
+        </div>
+
+        <div class="container3 paddingclass">
+            <span>
+                <div>WE ARE APPWEBSTUDIOS</div>
+                <div><span></span> Top-rated Web And Mobile App Development Company</div>
+                <div>Appwebstudios started its operation in the year 1999. We are Worldwide, based Web, App and Digital Marketing Companey.
+                    Our main Domian is Web Design, App Development, Digital Marketing, Product Design and Cloud Services. Customer Satisfaction and the Highest rate of Customer Repeatability make us one of the pioneers in the field.
+                    So, what are you waiting for? Let us discuss your ideas and our innovation in detail beacuse catering your requirement and converting it into a final product is our main goal.
+                </div>
+                <div>
+                    <img src="image/badge-a1.png" alt="img">
+                    <img src="image/badge-b.png" alt="img">
+                    <img src="image/badge-c.png" alt="img">
+                </div>
+                <div>
+                    <span>About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                            <line x1="8" y1="12" x2="19" y2="12"></line>
+                            <polyline points="14 7 19 12 14 17"></polyline>
+                        </svg>
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                            <polygon points="5 3 19 12 5 21 5 3" fill="white"></polygon>
+                        </svg>
+                        Watch Video</span>
+                </div>
+            </span>
+            <span>
+                <span>
+                    <div>
+                        <div>PROJECTS</div>
+                        <div>7500+</div>
+                        <div>We Delivered the Thousands of Successful projects around the world.</div>
+                    </div>
+                    <div>
+                        <div>TEAM</div>
+                        <div>540+</div>
+                        <div>Our team consists of high qualified, experienced and knowledgeable.</div>
+                    </div>
+                </span>
+                <span>
+                    <div>
+                        <div>CLIENTS</div>
+                        <div>3500+</div>
+                        <div>We Delivered the Thousands of Successful projects around the world.</div>
+                    </div>
+                    <div>
+                        <div>YEARS</div>
+                        <div>20+</div>
+                        <div>Clients across the globe witness our quality, processes and work.</div>
+                    </div>
+                </span>
+            </span>
+        </div>
+
+
+        <div class="container4 paddingclass">
+            <div>See what we can <span><span></span>do</span> for <span><span></span>you</span></div>
+            <div>
+                <div>
+                    <div><img src="image/app-development.png"></div>
+                    <div>
+                        <div>App Development</div>
+                        <div>We generate an impactful and robust mobile app that fits your brand and industry within a shorter time frame.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div><img src="image/web-development.png"></div>
+                    <div>
+                        <div>Web Development</div>
+                        <div>We build unmatched brand eauity through our customized database driven website and online application.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="image/product-design.png"></div>
+                    <div>
+                        <div>Product Design</div>
+                        <div>We offer services including product design, visual design and process design to keep products invigorated.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div><img src="image/marketing-solutions.png"></div>
+                    <div>
+                        <div>Marketing solutions</div>
+                        <div>We provide internet marketing solution to help business generate leads and get more from digital interaction.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="image/payment-gateway.png"></div>
+                    <div>
+                        <div>Payment Gateway Development</div>
+                        <div>We offer best store payment gateway and eCommerce development including extensions development.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="image/block-chain.png"></div>
+                    <div>
+                        <div>BlockChain Development</div>
+                        <div>Indroduce the highest security and automate the processes with our BlockChain solutions for your digital applications.</div>
+                        <div>Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="8" y1="12" x2="19" y2="12"></line>
+                                <polyline points="14 7 19 12 14 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container5">
+            <div>
+                <span>
+                    Hire World-Class <span><span></span>Developers</span>
+                </span>
+                <span>Hire Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="8" y1="12" x2="19" y2="12"></line>
+                        <polyline points="14 7 19 12 14 17"></polyline>
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <div class="container6 paddingclass">
+            <div>
+                <span>Our <span><span></span>Selected</span> Work</span>
+                <span>View All
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="8" y1="12" x2="19" y2="12"></line>
+                        <polyline points="14 7 19 12 14 17"></polyline>
+                    </svg>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <div><img src="image/parle.jpg"></div>
+                    <div>Mobile app</div>
+                    <div>Parle-C&F Management</div>
+                </span>
+                <span>
+                    <div><img src="image/franklin.jpg"></div>
+                    <div>Mobile app</div>
+                    <div>FranklinCovey India & SA</div>
+                </span>
+                <span>
+                    <div><img src="image/neuoleadership.jpg"></div>
+                    <div>Mobile app</div>
+                    <div>Neurolradership India & SA</div>
+                </span>
+            </div>
+        </div>
+
+        <div class="container7">
+            <div>
+                <span><span></span>Technologies</span> we work with
+            </div>
+        </div>
+        <div class="container8">
+            <div>
+                <div>
+                    <span>Mobile</span>
+                    <span>Front End</span>
+                    <span>Database</span>
+                    <span>CMS</span>
+                </div>
+                <div>
+                    <span>
+                        <div><img src="image/app-store.png"></div>
+                        <div>iOS</div>
+                    </span>
+                    <span>
+                        <div><img src="image/android.png"></div>
+                        <div>Android</div>
+                    </span>
+                    <span>
+                        <div><img src="image/flutter.png"></div>
+                        <div>Flutter</div>
+                    </span>
+                    <span>
+                        <div><img src="image/java.png"></div>
+                        <div>Java</div>
+                    </span>
+                    <span>
+                        <div><img src="image/physics.png"></div>
+                        <div>React Native</div>
+                    </span>
+                    <span>
+                        <div><img src="image/python.png"></div>
+                        <div>Python</div>
+                    </span>
+                    <span>
+                        <div><img src="image/java.png"></div>
+                        <div>Java</div>
+                    </span>
+                    <span>
+                        <div><img src="image/swift.png"></div>
+                        <div>Swift</div>
+                    </span>
+                    <span>
+                        <div><img src="image/pwa.png"></div>
+                        <div>PWA</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container9 paddingclass">
+            <div>TESTIMONIALS</div>
+            <div>Our <span><span></span>clients</span><span><span></span> praise</span> us for great results</div>
+            <div>Appwebstudios build my startup business a great website that really helps current and potential customers get a good feel for my company.</div>
+            <div>I am delighted with our new website. A1 service and design by Appwebstudios. You can go with the Web Design Company, and I 100% recommend them to anyone. The perfect company to go for your ideal website and digital marketing.</div>
+            <div>
+                <div>
+                    <span>
+                        <img src="image/girl.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="orangered" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                            <polygon points="5 3 19 12 5 21 5 3" fill="orangered"></polygon>
+                        </svg>
+                    </span>
+                    <span>Kristin Stewart</span>
+                    <span>London, United Kingdom</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="5" fill="orangered"></circle>
+                        </svg>
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc">
+                            <!--<circle cx="12" cy="12" r="10"></circle>-->
+                            <circle cx="12" cy="12" r="5" fill="orangered"></circle>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container10">
+            <div>
+                We Are Partner With <span><span></span>Top</span><span><span></span> Ventures</span>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo. Aeneam massa. Cum sociis natoque penatibus et magnis.
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    <footer></footer>
+
+
+</body>
+
+</html>
